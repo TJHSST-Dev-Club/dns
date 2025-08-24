@@ -1,0 +1,46 @@
+---
+'':
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: MX
+    value:
+      exchange: mailserver.purelymail.com.
+      preference: 50
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: TXT
+    values:
+    - purelymail_ownership_proof=e708addd2ba7ef7d3055e0d05c1343cc8df0bc32e40ffac072ef7db01bc78ef2b460b1f5c5333ddb8a347fa06de98e59ee286259e609de995bfe968a800f6be4
+    - v=spf1 include:_spf.purelymail.com ~all
+_dmarc:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: dmarcroot.purelymail.com.
+purelymail1._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: key1.dkimroot.purelymail.com.
+purelymail2._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: key2.dkimroot.purelymail.com.
+purelymail3._domainkey:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: key3.dkimroot.purelymail.com.

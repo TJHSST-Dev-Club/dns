@@ -1,0 +1,15 @@
+---
+'':
+  - octodns:
+      cloudflare:
+        auto-ttl: true
+    ttl: 300
+    type: ALIAS
+    value: user.tjhsst.edu.
+www:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: user.tjhsst.edu.
