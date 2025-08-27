@@ -1,0 +1,8 @@
+---
+'coder':
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 192.0.2.1
