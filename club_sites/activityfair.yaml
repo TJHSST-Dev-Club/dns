@@ -1,0 +1,8 @@
+---
+activityfair:
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: A
+  value: 5.161.84.99
