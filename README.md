@@ -5,7 +5,7 @@ DNS-as-code for [`tjdev.club`](https://tjdev.club). We keep our DNS records in Y
 ### What's Here?
 - **Zone config**: Per-website-group YAML files live under `club_sites/` and `user_sites/`. A small build step merges them into `zones/tjdev.club.yaml` for OctoDNS.
 - **Deploy**: GitHub Actions runs OctoDNS on pushes to `main` and applies changes to Cloudflare.
-- **Scripts**: `deploy_dns.sh` (apply) and `dump_dns.sh` (export current zone). Both require Cloudflare creds.
+- **Scripts**: `scripts/deploy_dns.sh` (apply) and `scripts/dump_dns.sh` (export current zone). Both require Cloudflare creds.
 - **Env**: Python 3.12 with `uv`. Deps are OctoDNS and the Cloudflare provider (see `pyproject.toml`).
 
 ### How it works
@@ -43,7 +43,7 @@ uv sync
 uv run octodns-sync --config-file=config/production.yaml --help
 ```
 
-- To export the current Cloudflare zone to files (requires secrets): `./dump_dns.sh`
-- To deploy from local (requires secrets): `./deploy_dns.sh`
+- To export the current Cloudflare zone to files (requires secrets): `./scripts/dump_dns.sh`
+- To deploy from local (requires secrets): `./scripts/deploy_dns.sh`
 
 Questions? Open an issue or ask in the club Discord.

@@ -1,0 +1,5 @@
+---
+test:
+  ttl: 300
+  type: TXT
+  value: "goodmorning"
