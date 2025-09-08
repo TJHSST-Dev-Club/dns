@@ -1,6 +1,6 @@
 # TJ Dev Club DNS
 
-DNS-as-code for [`tjdev.club`](https://tjdev.club). We keep our DNS records in YAML and deploy them to Cloudflare with OctoDNS. 
+DNS-as-code for [`tjdev.club`](https://tjdev.club/). We keep our DNS records in YAML and deploy them to Cloudflare with OctoDNS. 
 
 ### What's Here?
 - **Zone config**: Per-website-group YAML files live under `club_sites/` and `user_sites/`. A small build step merges them into `zones/tjdev.club.yaml` for OctoDNS.
