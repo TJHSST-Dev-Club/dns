@@ -6,7 +6,7 @@ if [ -f .env ]; then
 fi
 
 # build merged zone
-uv run python ./merge_zones.py || exit 1
+uv run python ./../merge_zones.py || exit 1
 
 # run octodns-sync
-octodns-sync --config-file=config/production.yaml --doit
+octodns-sync --config-file ./../config/production.yaml --doit
