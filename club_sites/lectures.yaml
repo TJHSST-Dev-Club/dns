@@ -1,5 +1,5 @@
 ---
-lecture:
+lectures:
   - octodns:
       cloudflare:
         auto-ttl: true
