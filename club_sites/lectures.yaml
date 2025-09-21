@@ -1,8 +1,7 @@
----
 lectures:
-  - octodns:
-      cloudflare:
-        auto-ttl: true
-    ttl: 300
-    type: CNAME
-    value: tjhsst-dev-club.github.io.
+  octodns:
+    cloudflare:
+      auto-ttl: true
+  ttl: 300
+  type: CNAME
+  value: tjhsst-dev-club.github.io.
